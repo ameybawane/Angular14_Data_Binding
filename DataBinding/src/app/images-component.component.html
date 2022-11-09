@@ -1,0 +1,7 @@
+<h2>Select Image</h2>
+<select [(ngModel)]="imagePath">
+    <option *ngFor="let item of images" value="{{item.path}}">{{item.Name}}</option>
+</select>
+<div>
+    <img src="{{imagePath}}">
+</div>
